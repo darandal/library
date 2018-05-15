@@ -6,4 +6,8 @@ def call() {
   echo "${results}"
   def varHere = "Something else"
   echo "${varHere}"
+  
+  //place in init.groovy
+  //sh "env > ${env.LOG_PATH}/env.log"
+  //archiveArtifacts(artifacts: "${env.LOG_PATH}/env.log", allowEmptyArchive: true)
 }
